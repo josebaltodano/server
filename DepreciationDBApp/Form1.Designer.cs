@@ -29,6 +29,7 @@ namespace DepreciationDBApp.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnAddAsset = new System.Windows.Forms.Button();
             this.dgvAsset = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -37,7 +38,12 @@ namespace DepreciationDBApp.Forms
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsset)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAddAsset
@@ -98,16 +104,54 @@ namespace DepreciationDBApp.Forms
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Disponible",
+            "No disponible"});
             this.comboBox1.Location = new System.Drawing.Point(251, 173);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(158, 23);
             this.comboBox1.TabIndex = 7;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(463, 26);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(74, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Actualizar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(463, 71);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(74, 23);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "Delete";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(284, 235);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 15);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "-------";
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 507);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.textBox4);
@@ -119,11 +163,23 @@ namespace DepreciationDBApp.Forms
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsset)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
+        private void LoadID(bool borrado)
+        {
+            if (borrado == true)
+            {
+                this.Text = $"Activo";
+            }
+            else
+            {
+                this.Text = $"Activo con ID = {Form1.ideactivo}";
+            }
 
+        }
         #endregion
 
         private System.Windows.Forms.Button btnAddAsset;
@@ -134,6 +190,10 @@ namespace DepreciationDBApp.Forms
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 

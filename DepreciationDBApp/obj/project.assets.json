@@ -6467,23 +6467,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JADPA27\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Cristina\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JADPA27\\Desktop\\Nueva carpeta\\DepreciationDBApp\\DepreciationDBApp\\DepreciationDBApp.Forms.csproj",
+      "projectUniqueName": "C:\\Users\\Cristina\\OneDrive\\Escritorio\\Nueva carpeta (12)\\server\\DepreciationDBApp\\DepreciationDBApp.Forms.csproj",
       "projectName": "DepreciationDBApp.Forms",
-      "projectPath": "C:\\Users\\JADPA27\\Desktop\\Nueva carpeta\\DepreciationDBApp\\DepreciationDBApp\\DepreciationDBApp.Forms.csproj",
-      "packagesPath": "C:\\Users\\JADPA27\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JADPA27\\Desktop\\Nueva carpeta\\DepreciationDBApp\\DepreciationDBApp\\obj\\",
+      "projectPath": "C:\\Users\\Cristina\\OneDrive\\Escritorio\\Nueva carpeta (12)\\server\\DepreciationDBApp\\DepreciationDBApp.Forms.csproj",
+      "packagesPath": "C:\\Users\\Cristina\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Cristina\\OneDrive\\Escritorio\\Nueva carpeta (12)\\server\\DepreciationDBApp\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\JADPA27\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Cristina\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6497,14 +6493,14 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\JADPA27\\Desktop\\Nueva carpeta\\DepreciationDBApp\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj": {
-              "projectPath": "C:\\Users\\JADPA27\\Desktop\\Nueva carpeta\\DepreciationDBApp\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj"
+            "C:\\Users\\Cristina\\OneDrive\\Escritorio\\Nueva carpeta (12)\\server\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj": {
+              "projectPath": "C:\\Users\\Cristina\\OneDrive\\Escritorio\\Nueva carpeta (12)\\server\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj"
             },
-            "C:\\Users\\JADPA27\\Desktop\\Nueva carpeta\\DepreciationDBApp\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj": {
-              "projectPath": "C:\\Users\\JADPA27\\Desktop\\Nueva carpeta\\DepreciationDBApp\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj"
+            "C:\\Users\\Cristina\\OneDrive\\Escritorio\\Nueva carpeta (12)\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj": {
+              "projectPath": "C:\\Users\\Cristina\\OneDrive\\Escritorio\\Nueva carpeta (12)\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj"
             },
-            "C:\\Users\\JADPA27\\Desktop\\Nueva carpeta\\DepreciationDBApp\\DepreciationDBApp.Infrastructure\\DepreciationDBApp.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\JADPA27\\Desktop\\Nueva carpeta\\DepreciationDBApp\\DepreciationDBApp.Infrastructure\\DepreciationDBApp.Infrastructure.csproj"
+            "C:\\Users\\Cristina\\OneDrive\\Escritorio\\Nueva carpeta (12)\\server\\DepreciationDBApp.Infrastructure\\DepreciationDBApp.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Cristina\\OneDrive\\Escritorio\\Nueva carpeta (12)\\server\\DepreciationDBApp.Infrastructure\\DepreciationDBApp.Infrastructure.csproj"
             }
           }
         }
@@ -6548,6 +6544,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.15, 5.0.15]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
