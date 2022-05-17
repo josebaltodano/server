@@ -20,6 +20,7 @@ namespace DepreciationDBApp.Infrastructure.Repositories
         {
             try
             {
+             
                 depreciationDbContext.Assets.Add(t);
                 depreciationDbContext.SaveChanges();
             }
@@ -30,6 +31,8 @@ namespace DepreciationDBApp.Infrastructure.Repositories
            
         }
 
+   
+    
         public bool Delete(Asset t)
         {
             try

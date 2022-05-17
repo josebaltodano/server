@@ -36,7 +36,7 @@ namespace DepreciationDBApp.Forms
                 Description =richTextBox1.Text,
                 Amount = decimal.Parse(textBox2.Text),
                 AmountResidual = decimal.Parse(textBox3.Text),
-                Terms = int.Parse(textBox4.Text),
+                Temrs = int.Parse(textBox4.Text),
                 Code = Guid.NewGuid().ToString(),
                 Status = comboBox1.SelectedItem.ToString(),
                 IsActive = true

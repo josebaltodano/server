@@ -1,5 +1,6 @@
 using DepreciationDBApp.Applications.Interfaces;
 using DepreciationDBApp.Applications.Services;
+using DepreciationDBApp.Domain.DepreciationDBEntities;
 using DepreciationDBApp.Domain.Entities;
 using DepreciationDBApp.Domain.Interfaces;
 using DepreciationDBApp.Forms;
@@ -51,7 +52,7 @@ namespace DepreciationDBApp
             {
                 options.UseSqlServer(Configuration.GetConnectionString("Default"));
             });
-            services.AddScoped<IDepreciationDbContext, DepreciationDBContext>();
+            services.AddScoped<IDepreciationDbContext,DepreciationDBContext>();
             services.AddScoped<IAssetRepository, EFAssetRepository>();
             services.AddScoped<IAssetService, AssetService>();
             services.AddScoped<Form1>();
