@@ -8,7 +8,7 @@ using DepreciationDBApp.Domain.Interfaces;
 
 namespace DepreciationDBApp.Domain.DepreciationDBEntities
 {
-    public partial class DepreciationDBContext : DbContext,IDepreciationDbContext
+    public partial class DepreciationDBContext : DbContext, IDepreciationDbContext
     {
         public DepreciationDBContext()
         {
@@ -21,16 +21,14 @@ namespace DepreciationDBApp.Domain.DepreciationDBEntities
 
         public virtual DbSet<Asset> Assets { get; set; }
         public virtual DbSet<AssetEmployee> AssetEmployees { get; set; }
-        public DbSet<AssetEmployee> assetEmployees { get; set; }
         public virtual DbSet<Employee> Employees { get; set; }
-        public DbSet<Employee> employees { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-CSE96EB;Initial Catalog=DepreciationDB;user=sa;password=12345");
+                optionsBuilder.UseSqlServer("Data Source=JADPA19\\SQLSERVER2019;Initial Catalog=DepreciationDB;user=sa;password=123456");
             }
         }
 
@@ -54,7 +52,7 @@ namespace DepreciationDBApp.Domain.DepreciationDBEntities
 
                 entity.Property(e => e.Code)
                     .IsRequired()
-                    .HasMaxLength(50)
+                    .HasMaxLength(100)
                     .IsUnicode(false)
                     .HasColumnName("code");
 
@@ -85,21 +83,25 @@ namespace DepreciationDBApp.Domain.DepreciationDBEntities
 
                 entity.Property(e => e.Id).HasColumnName("id");
 
-                entity.Property(e => e.Asseteid).HasColumnName("asseteid");
+                entity.Property(e => e.AssetId).HasColumnName("assetId");
 
-                entity.Property(e => e.Date).HasColumnType("date");
+                entity.Property(e => e.Date)
+                    .HasColumnType("date")
+                    .HasColumnName("date");
 
-                entity.Property(e => e.Employeeid).HasColumnName("employeeid");
+                entity.Property(e => e.EmployeeId).HasColumnName("employeeId");
 
-                entity.HasOne(d => d.Assete)
+                entity.Property(e => e.IsActive).HasColumnName("isActive");
+
+                entity.HasOne(d => d.Asset)
                     .WithMany(p => p.AssetEmployees)
-                    .HasForeignKey(d => d.Asseteid)
+                    .HasForeignKey(d => d.AssetId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_asset");
 
                 entity.HasOne(d => d.Employee)
                     .WithMany(p => p.AssetEmployees)
-                    .HasForeignKey(d => d.Employeeid)
+                    .HasForeignKey(d => d.EmployeeId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_employee");
             });

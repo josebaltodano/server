@@ -21,7 +21,7 @@ namespace DepreciationDBApp.Infrastructure.Repositories
             try
             {
                 ValidateEmployee(t);
-                depreciationDB.employees.Add(t);
+                depreciationDB.Employees.Add(t);
                 depreciationDB.SaveChanges();
             }
             catch (Exception)
@@ -56,7 +56,7 @@ namespace DepreciationDBApp.Infrastructure.Repositories
                 {
                     throw new Exception($"El objeto con id{t.Dni} no existe.");
                 }
-                depreciationDB.employees.Remove(t);
+                depreciationDB.Employees.Remove(t);
                 int result = depreciationDB.SaveChanges();
                 return result > 0;
             }
@@ -74,7 +74,7 @@ namespace DepreciationDBApp.Infrastructure.Repositories
                 {
                     throw new Exception($"El id{DNi} no puede ser igual a cero");
                 }
-                return depreciationDB.employees.FirstOrDefault(x => x.Dni == DNi);
+                return depreciationDB.Employees.FirstOrDefault(x => x.Dni == DNi);
             }
             catch (Exception)
             {
@@ -110,7 +110,7 @@ namespace DepreciationDBApp.Infrastructure.Repositories
 
         public List<Employee> GetAll()
         {
-            return depreciationDB.employees.ToList();
+            return depreciationDB.Employees.ToList();
         }
 
         public bool SetAssetEmployee(Employee employee, Asset asset)

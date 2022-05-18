@@ -17,10 +17,10 @@ namespace DepreciationDBApp.Domain.Entities
         public string Description { get; set; }
         public decimal Amount { get; set; }
         public decimal AmountResidual { get; set; }
-        public int Temrs { get; set; }
+        public int Terms { get; set; }
         public string Code { get; set; }
         public string Status { get; set; }
-        public bool? IsActive { get; set; }
+        public bool IsActive { get; set; }
 
         public virtual ICollection<AssetEmployee> AssetEmployees { get; set; }
     }

@@ -5,8 +5,11 @@
     "\\DepreciationDBApp.Applications",
     "\\DepreciationDBApp.Applications\\Services",
     "\\DepreciationDBApp.Domain",
-    "\\DepreciationDBApp.Domain\\Entities"
+    "\\DepreciationDBApp.Domain\\DepreciationDBEntities",
+    "\\DepreciationDBApp.Domain\\Entities",
+    "\\DepreciationDBApp.Infrastructure",
+    "\\DepreciationDBApp.Infrastructure\\Repositories"
   ],
-  "SelectedNode": "\\DepreciationDBApp.Domain\\Entities\\Asset.cs",
+  "SelectedNode": "\\DepreciationDBApp.Domain\\DepreciationDBEntities\\DepreciationDBContext.cs",
   "PreviewInSolutionExplorer": false
 }

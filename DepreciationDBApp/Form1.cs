@@ -32,14 +32,15 @@ namespace DepreciationDBApp.Forms
         {
             Asset asset = new Asset()
             {
-                Name = textBox1.Text,
-                Description =richTextBox1.Text,
-                Amount = decimal.Parse(textBox2.Text),
-                AmountResidual = decimal.Parse(textBox3.Text),
-                Temrs = int.Parse(textBox4.Text),
-                Code = Guid.NewGuid().ToString(),
-                Status = comboBox1.SelectedItem.ToString(),
-                IsActive = true
+             Name="daf",
+             Amount=333.3M,
+             AmountResidual=332.3M,
+             Code="333",
+             Description="yeah",
+             IsActive=true,
+             Status="eee",
+             Terms=3,
+             
             };
 
             assetService.Create(asset);
@@ -80,9 +81,11 @@ namespace DepreciationDBApp.Forms
             textBox2.Enabled = true;
 
         }
-      
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
+    }
 
     }
