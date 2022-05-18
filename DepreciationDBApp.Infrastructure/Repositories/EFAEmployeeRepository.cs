@@ -30,9 +30,16 @@ namespace DepreciationDBApp.Infrastructure.Repositories
             }
         }
 
-        private void ValidateEmployee(Employee t)
+        private void ValidateEmployee(Employee employee)
         {
-            throw new NotImplementedException();
+           if(employee == null)
+            {
+                throw new ArgumentException("El objeto empleado no puede ser null");
+            }
+            if (string.IsNullOrEmpty(employee.Email))
+            {
+                throw new ArgumentException("El Email no puede estar vacio");
+            }
         }
 
        
@@ -77,12 +84,28 @@ namespace DepreciationDBApp.Infrastructure.Repositories
 
         public Employee FInbyName(string email)
         {
-            throw new NotImplementedException();
+            try
+            {
+                List<Employee> employees = GetAll();
+                return employees.First(x => x.Email.Equals(email, StringComparison.CurrentCultureIgnoreCase));
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public IEnumerable<Employee> FindLastNames(string lasnames)
         {
-            throw new NotImplementedException();
+            try
+            {
+                List<Employee> employees = GetAll();
+                return (List<Employee>)employees.Where(x => x.Lastnames.Equals(lasnames, StringComparison.CurrentCultureIgnoreCase)).ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public List<Employee> GetAll()
@@ -92,6 +115,15 @@ namespace DepreciationDBApp.Infrastructure.Repositories
 
         public bool SetAssetEmployee(Employee employee, Asset asset)
         {
+            if(employee == null && asset == null)
+            {
+                throw new ArgumentException("Los Objetos no pueden ser null");
+            }
+            Employee vaemployee = FinByDni(employee.Dni);
+            if(vaemployee == null)
+            {
+                throw new ArgumentException($"EL Objeto {employee.Dni} no puede ser null");
+            }
             throw new NotImplementedException();
         }
 

@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\DepreciationDBApp"
+    "\\DepreciationDBApp",
+    "\\DepreciationDBApp.Applications",
+    "\\DepreciationDBApp.Applications\\Services",
+    "\\DepreciationDBApp.Domain",
+    "\\DepreciationDBApp.Domain\\Entities"
   ],
-  "SelectedNode": "\\DepreciationDBApp\\Form1.cs",
+  "SelectedNode": "\\DepreciationDBApp.Domain\\Entities\\Asset.cs",
   "PreviewInSolutionExplorer": false
 }

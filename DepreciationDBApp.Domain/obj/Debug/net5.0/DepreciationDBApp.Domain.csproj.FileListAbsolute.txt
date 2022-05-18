@@ -28,3 +28,17 @@ C:\Users\JADPA27\Desktop\pratica\server\DepreciationDBApp.Domain\obj\Debug\net5.
 C:\Users\JADPA27\Desktop\pratica\server\DepreciationDBApp.Domain\obj\Debug\net5.0\ref\DepreciationDBApp.Domain.dll
 C:\Users\JADPA27\Desktop\pratica\server\DepreciationDBApp.Domain\obj\Debug\net5.0\DepreciationDBApp.Domain.pdb
 C:\Users\JADPA27\Desktop\pratica\server\DepreciationDBApp.Domain\obj\Debug\net5.0\DepreciationDBApp.Domain.genruntimeconfig.cache
+C:\Users\Cristina\Videos\Nueva carpeta (8)\server\DepreciationDBApp.Domain\bin\Debug\net5.0\DepreciationDBApp.Domain.deps.json
+C:\Users\Cristina\Videos\Nueva carpeta (8)\server\DepreciationDBApp.Domain\bin\Debug\net5.0\DepreciationDBApp.Domain.runtimeconfig.json
+C:\Users\Cristina\Videos\Nueva carpeta (8)\server\DepreciationDBApp.Domain\bin\Debug\net5.0\DepreciationDBApp.Domain.runtimeconfig.dev.json
+C:\Users\Cristina\Videos\Nueva carpeta (8)\server\DepreciationDBApp.Domain\bin\Debug\net5.0\DepreciationDBApp.Domain.dll
+C:\Users\Cristina\Videos\Nueva carpeta (8)\server\DepreciationDBApp.Domain\bin\Debug\net5.0\ref\DepreciationDBApp.Domain.dll
+C:\Users\Cristina\Videos\Nueva carpeta (8)\server\DepreciationDBApp.Domain\bin\Debug\net5.0\DepreciationDBApp.Domain.pdb
+C:\Users\Cristina\Videos\Nueva carpeta (8)\server\DepreciationDBApp.Domain\obj\Debug\net5.0\DepreciationDBApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cristina\Videos\Nueva carpeta (8)\server\DepreciationDBApp.Domain\obj\Debug\net5.0\DepreciationDBApp.Domain.AssemblyInfoInputs.cache
+C:\Users\Cristina\Videos\Nueva carpeta (8)\server\DepreciationDBApp.Domain\obj\Debug\net5.0\DepreciationDBApp.Domain.AssemblyInfo.cs
+C:\Users\Cristina\Videos\Nueva carpeta (8)\server\DepreciationDBApp.Domain\obj\Debug\net5.0\DepreciationDBApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Cristina\Videos\Nueva carpeta (8)\server\DepreciationDBApp.Domain\obj\Debug\net5.0\DepreciationDBApp.Domain.dll
+C:\Users\Cristina\Videos\Nueva carpeta (8)\server\DepreciationDBApp.Domain\obj\Debug\net5.0\ref\DepreciationDBApp.Domain.dll
+C:\Users\Cristina\Videos\Nueva carpeta (8)\server\DepreciationDBApp.Domain\obj\Debug\net5.0\DepreciationDBApp.Domain.pdb
+C:\Users\Cristina\Videos\Nueva carpeta (8)\server\DepreciationDBApp.Domain\obj\Debug\net5.0\DepreciationDBApp.Domain.genruntimeconfig.cache

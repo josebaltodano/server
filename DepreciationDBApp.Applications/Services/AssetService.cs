@@ -29,22 +29,22 @@ namespace DepreciationDBApp.Applications.Services
 
         public bool Delete(Asset t)
         {
-            throw new NotImplementedException();
+            return assetRepository.Delete(t);
         }
 
         public Asset FindByCode(string code)
         {
-            throw new NotImplementedException();
+            return assetRepository.FindByCode(code);
         }
 
         public Asset FindById(int id)
         {
-            throw new NotImplementedException();
+            return assetRepository.FindById(id);
         }
 
         public List<Asset> FindByName(string name)
         {
-            throw new NotImplementedException();
+            return assetRepository.FindByName(name);
         }
 
         public List<Asset> GetAll()
@@ -54,7 +54,7 @@ namespace DepreciationDBApp.Applications.Services
 
         public int Update(Asset t)
         {
-            throw new NotImplementedException();
+            return assetRepository.Update(t);
         }
     }
 }
