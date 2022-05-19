@@ -20,34 +20,47 @@ namespace DepreciationDBApp.Forms
         private bool borrar = false;
         public Form1(IAssetService assetService)
         {
+            loaddata();
             this.assetService = assetService;
             InitializeComponent();
         }
-        private void LoadDT1()
-        {
-            dgvAsset.DataSource = assetService.GetAll();
-        }
+        //private void LoadDT1()
+        //{
+        //    dgvAsset.DataSource = assetService.GetAll();
+        //}
 
         private void btnAddAsset_Click(object sender, EventArgs e)
         {
             Asset asset = new Asset()
             {
-             Name="daf",
-             Amount=333.3M,
-             AmountResidual=332.3M,
-             Code="333",
-             Description="yeah",
-             IsActive=true,
-             Status="eee",
-             Terms=3,
+                Name = txtnombre.Text,
+                Amount = decimal.Parse(txtvalor.Text),
+                AmountResidual = decimal.Parse(txtvalorresidual.Text),
+                Terms = int.Parse(txtvidautil.Text),
+                Description = richTextBox1.Text,
+                Status = comboBox1.SelectedItem.ToString(),
+                Code = GeneradorCodigo(),
+                IsActive = true,
+
+        
              
             };
+            if (decimal.Parse(txtvalorresidual.Text) > decimal.Parse(txtvalor.Text))
+            {
+                MessageBox.Show("No debe de ser mayor que el valor del activo");
+            }
+            else
+            {
+                assetService.Create(asset);
+                loaddata();
+                Clean();
+            }
 
-            assetService.Create(asset);
-            LoadDT1();
-            
+            //assetService.Create(asset);
+            //LoadDT1();
+
         }
-
+        private void loaddata() => dgvAsset.DataSource = assetService.GetAll();
         private void button3_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Desea eliminar este activo", "Adventercia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
@@ -55,7 +68,7 @@ namespace DepreciationDBApp.Forms
                 var Asset = assetService.FindById(ideactivo);
                 assetService.Delete(Asset);
                 Clean();
-                LoadDT1();
+                loaddata();
                 borrar = true;
                 LoadID(borrar);
 
@@ -72,17 +85,35 @@ namespace DepreciationDBApp.Forms
         }
         private void Clean()
         {
-            textBox2.Clear();
-            textBox3.Clear();
-            textBox4.Clear();
+            txtnombre.Clear();
+            txtvidautil.Clear();
+            txtvalorresidual.Clear();
+            txtvalor.Clear();
             richTextBox1.Clear();
             comboBox1.SelectedIndex = -1;
-            textBox4.Enabled = true;
-            textBox2.Enabled = true;
+            txtvalor.Enabled = true;
+            txtvidautil.Enabled = true;
+
+        }
+        public string GeneradorCodigo()
+        {
+            var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            var Charsarr = new char[8];
+            var random = new Random();
+
+            for (int i = 0; i < Charsarr.Length; i++)
+            {
+                Charsarr[i] = characters[random.Next(characters.Length)];
+            }
+
+            return new String(Charsarr);
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void txtvalor_TextChanged(object sender, EventArgs e)
         {
 
         }
