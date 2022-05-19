@@ -40,6 +40,10 @@ namespace DepreciationDBApp.Infrastructure.Repositories
             {
                 throw new ArgumentException("El Email no puede estar vacio");
             }
+            if (string.IsNullOrEmpty(employee.Names))
+            {
+                throw new ArgumentException("El nombre no puede estar vacio");
+            }
         }
 
        

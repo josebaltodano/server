@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cristina\\Videos\\xff\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj": {}
+    "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cristina\\Videos\\xff\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj": {
+    "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cristina\\Videos\\xff\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj",
         "projectName": "DepreciationDBApp.Domain",
-        "projectPath": "C:\\Users\\Cristina\\Videos\\xff\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj",
-        "packagesPath": "C:\\Users\\Cristina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cristina\\Videos\\xff\\server\\DepreciationDBApp.Domain\\obj\\",
+        "projectPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj",
+        "packagesPath": "C:\\Users\\JADPA19\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Cristina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\JADPA19\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -6471,19 +6471,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Cristina\\.nuget\\packages\\": {}
+    "C:\\Users\\JADPA19\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Cristina\\Videos\\xff\\server\\DepreciationDBApp\\DepreciationDBApp.Forms.csproj",
+      "projectUniqueName": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp\\DepreciationDBApp.Forms.csproj",
       "projectName": "DepreciationDBApp.Forms",
-      "projectPath": "C:\\Users\\Cristina\\Videos\\xff\\server\\DepreciationDBApp\\DepreciationDBApp.Forms.csproj",
-      "packagesPath": "C:\\Users\\Cristina\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Cristina\\Videos\\xff\\server\\DepreciationDBApp\\obj\\",
+      "projectPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp\\DepreciationDBApp.Forms.csproj",
+      "packagesPath": "C:\\Users\\JADPA19\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Cristina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\JADPA19\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6497,14 +6501,14 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\Cristina\\Videos\\xff\\server\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj": {
-              "projectPath": "C:\\Users\\Cristina\\Videos\\xff\\server\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj"
+            "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj": {
+              "projectPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj"
             },
-            "C:\\Users\\Cristina\\Videos\\xff\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj": {
-              "projectPath": "C:\\Users\\Cristina\\Videos\\xff\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj"
+            "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj": {
+              "projectPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj"
             },
-            "C:\\Users\\Cristina\\Videos\\xff\\server\\DepreciationDBApp.Infrastructure\\DepreciationDBApp.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Cristina\\Videos\\xff\\server\\DepreciationDBApp.Infrastructure\\DepreciationDBApp.Infrastructure.csproj"
+            "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Infrastructure\\DepreciationDBApp.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Infrastructure\\DepreciationDBApp.Infrastructure.csproj"
             }
           }
         }
@@ -6552,12 +6556,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.15, 5.0.15]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
