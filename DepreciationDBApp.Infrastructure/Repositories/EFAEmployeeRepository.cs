@@ -1,6 +1,8 @@
 ﻿using DepreciationDBApp.Domain.DepreciationDBEntities;
 using DepreciationDBApp.Domain.Entities;
+using DepreciationDBApp.Domain.Enum;
 using DepreciationDBApp.Domain.Interfaces;
+using Microsoft.EntityFrameworkCore.Storage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -119,26 +121,91 @@ namespace DepreciationDBApp.Infrastructure.Repositories
 
         public bool SetAssetEmployee(Employee employee, Asset asset)
         {
-            if(employee == null && asset == null)
-            {
-                throw new ArgumentException("Los Objetos no pueden ser null");
-            }
-            Employee vaemployee = FinByDni(employee.Dni);
-            if(vaemployee == null)
-            {
-                throw new ArgumentException($"EL Objeto {employee.Dni} no puede ser null");
-            }
             throw new NotImplementedException();
+            if (employee == null && asset == null)
+            {
+                throw new ArgumentException("Los objetos no pueden ser nulos");
+            }
+            Employee valideEmployee = FinByDni(employee.Dni);
+            if (valideEmployee == null)
+            {
+                throw new ArgumentException($"El empleado {employee.Names} no se encuentra en la base de datos");
+            }
+            if (asset.Status == StatusAsset.Disponible.ToString())
+            {
+                throw new ArgumentException($"El asset {asset.Name} se encuentra ya asignado");
+            }
+            if (asset.IsActive == false)
+            {
+                throw new ArgumentException($"El asset {asset.Name} no se encuentra activo");
+            }
+            AssetEmployee assetEmployee = new AssetEmployee
+            {
+                Asset = asset,
+                AssetId = asset.Id,
+                Date = DateTime.Now,
+                IsActive = true,
+                Employee = employee,
+                EmployeeId = employee.Id,
+            };
+            depreciationDB.AssetEmployees.Add(assetEmployee);
+            depreciationDB.SaveChanges();
         }
 
         public bool SetToEmployee(Employee employee, List<Asset> assets)
         {
-            throw new NotImplementedException();
+            if (employee == null && assets == null)
+            {
+                throw new ArgumentException("Los Objetos no pueden ser null");
+            }
+            Employee vaemployee = FinByDni(employee.Dni);
+            if (vaemployee == null)
+            {
+                throw new ArgumentException($"EL Objeto {employee.Dni} no puede ser null");
+            }
+            Employee validar = FinByDni(employee.Dni);
+            foreach(Asset asset in assets) { 
+            if (validar == null)
+            {
+                throw new ArgumentException($"El empleado {employee.Names} no se encuentra en la base de datos");
+            }
+            if (asset.Status == StatusAsset.Disponible.ToString())
+            {
+                throw new ArgumentException($"El asset {asset.Name} se encuentra ya asignado");
+            }
+            if (asset.IsActive == false)
+            {
+                throw new ArgumentException($"El asset {asset.Name} no se encuentra activo");
+            }
+            }
+            
+            foreach (Asset asset1 in assets)
+            {
+                AssetEmployee assetEmployee = new AssetEmployee
+                {
+                    Asset = asset1,
+                    Employee = employee,
+                    AssetId = asset1.Id,
+                    IsActive = asset1.IsActive,
+                    Date = DateTime.Now,
+                    EmployeeId = employee.Id,
+
+                };
+                depreciationDB.AssetEmployees.Add(assetEmployee);
+            }
+            return true;
+            
         }
 
         public int Update(Employee t)
         {
             throw new NotImplementedException();
+        }
+
+        public IDbContextTransaction GetTransaction()
+        {
+            //return ((DepreciationDBApp.Domain.DepreciationDBApp.
+                throw new NotImplementedException();
         }
     }
 }

@@ -6477,11 +6477,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp\\DepreciationDBApp.Forms.csproj",
+      "projectUniqueName": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta (2)\\server\\DepreciationDBApp\\DepreciationDBApp.Forms.csproj",
       "projectName": "DepreciationDBApp.Forms",
-      "projectPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp\\DepreciationDBApp.Forms.csproj",
+      "projectPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta (2)\\server\\DepreciationDBApp\\DepreciationDBApp.Forms.csproj",
       "packagesPath": "C:\\Users\\JADPA19\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp\\obj\\",
+      "outputPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta (2)\\server\\DepreciationDBApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6501,14 +6501,14 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj": {
-              "projectPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj"
+            "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta (2)\\server\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj": {
+              "projectPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta (2)\\server\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj"
             },
-            "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj": {
-              "projectPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj"
+            "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta (2)\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj": {
+              "projectPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta (2)\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj"
             },
-            "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Infrastructure\\DepreciationDBApp.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Infrastructure\\DepreciationDBApp.Infrastructure.csproj"
+            "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta (2)\\server\\DepreciationDBApp.Infrastructure\\DepreciationDBApp.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta (2)\\server\\DepreciationDBApp.Infrastructure\\DepreciationDBApp.Infrastructure.csproj"
             }
           }
         }

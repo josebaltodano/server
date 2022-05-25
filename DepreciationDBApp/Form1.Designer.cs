@@ -71,6 +71,7 @@ namespace DepreciationDBApp.Forms
             this.dgvAsset.RowTemplate.Height = 25;
             this.dgvAsset.Size = new System.Drawing.Size(742, 219);
             this.dgvAsset.TabIndex = 1;
+            this.dgvAsset.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAsset_CellClick);
             // 
             // txtnombre
             // 
@@ -128,6 +129,7 @@ namespace DepreciationDBApp.Forms
             this.button1.TabIndex = 8;
             this.button1.Text = "Actualizar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 

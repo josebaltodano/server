@@ -72,3 +72,18 @@ C:\Users\Cristina\Videos\xff\server\DepreciationDBApp.Domain\obj\Debug\net5.0\De
 C:\Users\Cristina\Videos\xff\server\DepreciationDBApp.Domain\obj\Debug\net5.0\ref\DepreciationDBApp.Domain.dll
 C:\Users\JADPA19\Desktop\Nueva carpeta\server\DepreciationDBApp.Domain\obj\Debug\net5.0\DepreciationDBApp.Domain.csproj.AssemblyReference.cache
 C:\Users\JADPA19\Desktop\Nueva carpeta\server\DepreciationDBApp.Domain\obj\Debug\net5.0\refint\DepreciationDBApp.Domain.dll
+C:\Users\JADPA19\Desktop\Nueva carpeta (2)\server\DepreciationDBApp.Domain\bin\Debug\net5.0\DepreciationDBApp.Domain.deps.json
+C:\Users\JADPA19\Desktop\Nueva carpeta (2)\server\DepreciationDBApp.Domain\bin\Debug\net5.0\DepreciationDBApp.Domain.runtimeconfig.json
+C:\Users\JADPA19\Desktop\Nueva carpeta (2)\server\DepreciationDBApp.Domain\bin\Debug\net5.0\DepreciationDBApp.Domain.runtimeconfig.dev.json
+C:\Users\JADPA19\Desktop\Nueva carpeta (2)\server\DepreciationDBApp.Domain\bin\Debug\net5.0\DepreciationDBApp.Domain.dll
+C:\Users\JADPA19\Desktop\Nueva carpeta (2)\server\DepreciationDBApp.Domain\bin\Debug\net5.0\ref\DepreciationDBApp.Domain.dll
+C:\Users\JADPA19\Desktop\Nueva carpeta (2)\server\DepreciationDBApp.Domain\bin\Debug\net5.0\DepreciationDBApp.Domain.pdb
+C:\Users\JADPA19\Desktop\Nueva carpeta (2)\server\DepreciationDBApp.Domain\obj\Debug\net5.0\DepreciationDBApp.Domain.csproj.AssemblyReference.cache
+C:\Users\JADPA19\Desktop\Nueva carpeta (2)\server\DepreciationDBApp.Domain\obj\Debug\net5.0\DepreciationDBApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JADPA19\Desktop\Nueva carpeta (2)\server\DepreciationDBApp.Domain\obj\Debug\net5.0\DepreciationDBApp.Domain.AssemblyInfoInputs.cache
+C:\Users\JADPA19\Desktop\Nueva carpeta (2)\server\DepreciationDBApp.Domain\obj\Debug\net5.0\DepreciationDBApp.Domain.AssemblyInfo.cs
+C:\Users\JADPA19\Desktop\Nueva carpeta (2)\server\DepreciationDBApp.Domain\obj\Debug\net5.0\DepreciationDBApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\JADPA19\Desktop\Nueva carpeta (2)\server\DepreciationDBApp.Domain\obj\Debug\net5.0\DepreciationDBApp.Domain.dll
+C:\Users\JADPA19\Desktop\Nueva carpeta (2)\server\DepreciationDBApp.Domain\obj\Debug\net5.0\ref\DepreciationDBApp.Domain.dll
+C:\Users\JADPA19\Desktop\Nueva carpeta (2)\server\DepreciationDBApp.Domain\obj\Debug\net5.0\DepreciationDBApp.Domain.pdb
+C:\Users\JADPA19\Desktop\Nueva carpeta (2)\server\DepreciationDBApp.Domain\obj\Debug\net5.0\DepreciationDBApp.Domain.genruntimeconfig.cache

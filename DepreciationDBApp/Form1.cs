@@ -1,6 +1,7 @@
 ﻿using DepreciationDBApp.Applications.Interfaces;
 using DepreciationDBApp.Applications.Services;
 using DepreciationDBApp.Domain.Entities;
+using DepreciationDBApp.Domain.Enum;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,14 +21,14 @@ namespace DepreciationDBApp.Forms
         private bool borrar = false;
         public Form1(IAssetService assetService)
         {
-            loaddata();
+            //loaddata();
             this.assetService = assetService;
             InitializeComponent();
         }
-        //private void LoadDT1()
-        //{
-        //    dgvAsset.DataSource = assetService.GetAll();
-        //}
+        private void LoadDT1()
+        {
+            dgvAsset.DataSource = assetService.GetAll();
+        }
 
         private void btnAddAsset_Click(object sender, EventArgs e)
         {
@@ -52,34 +53,53 @@ namespace DepreciationDBApp.Forms
             else
             {
                 assetService.Create(asset);
-                loaddata();
+               /* loaddata()*/;
                 Clean();
             }
 
             //assetService.Create(asset);
-            //LoadDT1();
+            LoadDT1();
 
         }
-        private void loaddata() => dgvAsset.DataSource = assetService.GetAll();
+        //private void loaddata() => dgvAsset.DataSource = assetService.GetAll();
         private void button3_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Desea eliminar este activo", "Adventercia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            try
             {
-                var Asset = assetService.FindById(ideactivo);
-                assetService.Delete(Asset);
-                Clean();
-                loaddata();
-                borrar = true;
-                LoadID(borrar);
+                if (MessageBox.Show("Desea eliminar este activo", "Adventercia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    //var Asset = assetService.FindById(ideactivo);
+                    //assetService.Delete(Asset);
+                    //Clean();
+                    ////loaddata();
+                    //borrar = true;
+                    //LoadID(borrar);
+                    //LoadDT1();
+
+                    object a = dgvAsset.CurrentRow.Cells[0].Value;
+                    Asset asset = assetService.FindById((Int32)a);
+                    asset.IsActive = false;
+                    assetService.Update(asset);
+                    assetService.Delete(asset);
+                    fillDgv();
+                    Clean();
+                   
 
 
 
 
+
+                }
+                else
+                {
+                   
+                }
             }
-            else
+            catch (Exception)
             {
-                Clean();
+                throw;
             }
+            
           
             
         }
@@ -116,6 +136,46 @@ namespace DepreciationDBApp.Forms
         private void txtvalor_TextChanged(object sender, EventArgs e)
         {
 
+        }
+        private void fillDgv()
+        {
+            dgvAsset.DataSource = null;
+            List<Asset> assets = assetService.GetAll();
+            dgvAsset.DataSource = assets;
+        }
+
+        private void dgvAsset_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+           if(e.RowIndex >= 0)
+            {
+                Asset asset = assetService.GetAll()[e.RowIndex];
+                txtnombre.Text = asset.Name;
+                txtvalor.Text = asset.Amount.ToString();
+                txtvalorresidual.Text = asset.AmountResidual.ToString();
+                txtvidautil.Text = asset.Terms.ToString();
+                richTextBox1.Text = asset.Description;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (Validacion.emptyFIelds(txtnombre.Text, txtvalor.Text, txtvalorresidual.Text, txtvidautil.Text, richTextBox1.Text, comboBox1.SelectedIndex))
+            {
+                if (Validacion.ValidationAmount(decimal.Parse(txtvalor.Text), decimal.Parse(txtvalorresidual.Text)))
+                {
+                    object u = dgvAsset.CurrentRow.Cells[0].Value;
+                    Asset asset = assetService.FindById((Int32)u);
+                    asset.Name = txtnombre.Text;
+                    asset.Amount = decimal.Parse(txtvalor.Text);
+                    asset.AmountResidual = decimal.Parse(txtvalorresidual.Text);
+                    asset.Terms = int.Parse(txtvidautil.Text);
+                    asset.Description = richTextBox1.Text;
+                    asset.Status = comboBox1.SelectedItem.ToString();
+                    assetService.Update(asset);
+                    fillDgv();
+                    Clean();
+                }
+            }
         }
     }
 

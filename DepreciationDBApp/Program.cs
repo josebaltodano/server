@@ -57,13 +57,13 @@ namespace DepreciationDBApp
             services.AddScoped<IAssetService, AssetService>();
             services.AddScoped<IEmployee, EFAEmployeeRepository>();
             services.AddScoped<Iemployeeservice, EmployeeService>();
-            services.AddScoped<FmrRegistro>();
-            //services.AddScoped<Form1>();
-       
+            //services.AddScoped<FmrRegistro>();
+            services.AddScoped<Form1>();
+
 
             using (var serviceScope = services.BuildServiceProvider())
             {
-                var main = serviceScope.GetRequiredService<FmrRegistro>();
+                var main = serviceScope.GetRequiredService<Form1>();
                 Application.Run(main);
             }            
           

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj": {}
+    "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta (2)\\server\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj": {
+    "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta (2)\\server\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj",
+        "projectUniqueName": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta (2)\\server\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj",
         "projectName": "DepreciationDBApp.Applications",
-        "projectPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj",
+        "projectPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta (2)\\server\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj",
         "packagesPath": "C:\\Users\\JADPA19\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Applications\\obj\\",
+        "outputPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta (2)\\server\\DepreciationDBApp.Applications\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj": {
-                "projectPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj"
+              "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta (2)\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj": {
+                "projectPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta (2)\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj"
               }
             }
           }
@@ -77,14 +77,14 @@
         }
       }
     },
-    "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj": {
+    "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta (2)\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta (2)\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj",
         "projectName": "DepreciationDBApp.Domain",
-        "projectPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj",
+        "projectPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta (2)\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj",
         "packagesPath": "C:\\Users\\JADPA19\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Domain\\obj\\",
+        "outputPath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta (2)\\server\\DepreciationDBApp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

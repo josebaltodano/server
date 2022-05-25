@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5MIt7GDvsjgYARkH7EQdaFfJXEGNYZ9K98Zf45APMlgQEmDdEs1ywdcYQl3uWbvYN35L4QxfxYpo/vOepBHLDw==",
+  "dgSpecHash": "a1jN9a22IK1PKmLjUO4owzCLndSvhJmlxq739SucM3FW/r/EU+eawKlN8MywODeAHHgoX3lbLa0oYItPaIYEjA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj",
+  "projectFilePath": "C:\\Users\\JADPA19\\Desktop\\Nueva carpeta (2)\\server\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JADPA19\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\JADPA19\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
